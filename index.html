@@ -50,46 +50,58 @@
         }
     
         h1 {
-            color: #336699;        }
+            color: #336699;
+        }
     
         form {
             display: inline-block;
-            text-align : left;
-            border : 1px solid #ccc;
-            padding : 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px; /* increased padding */
+            width: 80%; /* increased width */
+            font-size: 1.2em; /* increased font size */
         }
     
         label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px; /* increased margin-bottom */
         }
     
         select {
             width: 100%;
-            padding: 5px;
+            padding: 15px;
             margin-bottom: 10px;
+            font-size: 1em; /* increased font size */
         }
         
         button {
-            padding: 8px 16px;
+            padding: 12px 20px; /* increased padding */
             background-color: #336699;
             color: #fff;
             border: none;
             cursor: pointer;
+            font-size: 1em; /* increased font size */
         }
     
         #resetButton {
             margin-bottom: 10px;
             float: left;
         }
+        
         table {
-          width : 100% ;
-          margin : 20px 0;
-          text-align : center;
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
         }
-       @media only screen and (max-width: 1024px) {
+
+        @media only screen and (max-width: 600px) {
+            form {
+                width: 100%; /* form takes full width on small screens */
+            }
+
             select {
                 padding: 15px;
+                font-size: 1em; /* maintain increased font size */
             }
         }
     </style>
