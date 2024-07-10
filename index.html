@@ -318,7 +318,6 @@
             const seatNumber = document.getElementById("seatNumber1_1").value + document.getElementById("seatNumber1_2").value;
             const returnTime = document.getElementById("returnTime1").value;
             const reason = document.getElementById("reason1").value;
-            const defaultValue = document.getElementById("defaultValue").value;
             const moveData = {
                 building: building,
                 seatNumber: seatNumber,
@@ -337,7 +336,7 @@
             document.getElementById("moveForm1").reset();
 
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbxKdaIhdhcAYZOTqbGOuwzLv5u8J3_uuFscwJs1kb-Jz4aXZ4KHGfAFZQg_1HfqC6l-/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxaxonSM-P4Io8bXGhmEmwmUCI5gEwLsxCrJk1xOtGuoosTcsMt8RGyGdq_YsqAumj2/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
@@ -369,7 +368,7 @@
             document.getElementById("moveForm2").reset();
 
             // POST request를 보냄
-            fetch('https://script.google.com/macros/s/AKfycbxKdaIhdhcAYZOTqbGOuwzLv5u8J3_uuFscwJs1kb-Jz4aXZ4KHGfAFZQg_1HfqC6l-/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxaxonSM-P4Io8bXGhmEmwmUCI5gEwLsxCrJk1xOtGuoosTcsMt8RGyGdq_YsqAumj2/exec', {
                 method: 'POST',
                 body: JSON.stringify(moveData)
             });
